@@ -1,0 +1,25 @@
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+.navbarcomp{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vh;
+}
+
+.navbarcomp::-webkit-scrollbar{
+    display: none;
+}
+
+.image{
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+}
