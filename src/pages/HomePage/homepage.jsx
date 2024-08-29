@@ -17,8 +17,11 @@ const HomePage = () =>{
             </div>
             <footer>
             <Link to="/services" className={styles.link}>
-                    <button className={styles.button}>View Services</button>
-                </Link>                
+                <button className={styles.button}>View Services</button>
+            </Link>                
+            <Link to="/contactus" className={styles.link}>
+                <button className={styles.button}>contactus</button>
+            </Link>                
             </footer>
         </div>
     )
