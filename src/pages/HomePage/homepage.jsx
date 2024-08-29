@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './homepage.module.css';
 
 const HomePage = () =>{
@@ -14,7 +15,11 @@ const HomePage = () =>{
                 <div></div>
                 <div></div>
             </div>
-            <footer></footer>
+            <footer>
+            <Link to="/services" className={styles.link}>
+                    <button className={styles.button}>View Services</button>
+                </Link>                
+            </footer>
         </div>
     )
 }

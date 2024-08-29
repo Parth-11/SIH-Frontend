@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Services.module.css';
+import styles from './services.module.css';
 
 const ServicePage = () => {
 
@@ -27,13 +27,23 @@ const ServicePage = () => {
     ]
     
     return(
-        <div>
-            <div>
+        <div className={styles.servicesSection}>
+            <div className={styles.header}>
+                <h2>SERVICES</h2>
+            </div>
+            <div className={styles.servicesCards}>
+                {services.map((service,index) => (
+                    <ServiceCard
+                        key={index}
+                        image={service.image}
+                        description={service.description}
+                    />
+                ))}
 
             </div>
 
         </div>
-    )
+    );
 
 }
 
